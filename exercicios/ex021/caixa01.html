@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        h1 {
+            background-color: aqua;
+            height: 300px;
+            width: 300px;
+            border: 10px solid darkblue;
+            /*border substitui border-width, border-style e border-color*/
+            padding: 10px 10px 20px 90px;
+            /*Substitui Padding-top, padding-right, padding-bottom e
+            padding-left e se forem todos iguais é só colocar um valor, se colocar dois valores o primeiro vai ser para cima e baixo e o segundo para direita e esquerda*/
+            margin: 20px, 10px, 20px, 20px;
+            
+             /*Substitui margin-top, margin-right, margin-bottom e
+            margin-left e se forem todos iguais é só colocar um valor, se colocar dois valores o primeiro vai ser para cima e baixo e o segundo para direita e esquerda*/
+
+            outline-width: 10px;
+            outline-style: solid;
+            outline-color: salmon;
+        }
+        a {
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplos de caixa box-level</h1>
+    <p>Parágrafo também são exemplos de box level, mas os <a href="a">Links são exemplos de caixas inline-level</a> Vamos ver como tudo isso funciona</p>
+</body>
+</html>
