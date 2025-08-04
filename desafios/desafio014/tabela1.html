@@ -41,21 +41,21 @@
     <table>
         <thead>
             <tr>
-                <th class="titulo-decorado" rowspan="2">Área</th>
-                <th class="titulo-decorado" rowspan="2">Disciplina</th>
-                <th class="titulo-decorado" colspan="2">Notas</th>
-                <th class="titulo-decorado" rowspan="2">Média</th>
+                <th class="titulo-decorado" rowspan="2" scope="col">Área</th>
+                <th class="titulo-decorado" rowspan="2" scope="col">Disciplina</th>
+                <th class="titulo-decorado" colspan="2" scope="colgroup">Notas</th>
+                <th class="titulo-decorado" rowspan="2" scope="col">Média</th>
             </tr>
 
             <tr>
-                <th class="titulo-decorado">Nota 1</th>
-                <th class="titulo-decorado">Nota 2</th>
+                <th class="titulo-decorado" scope="col">Nota 1</th>
+                <th class="titulo-decorado" scope="col">Nota 2</th>
             </tr>
         </thead>
 
         <tbody>
             <tr>
-                <th rowspan="4">Exatas</td>
+                <th rowspan="4" scope="rowgroup">Exatas</td>
                 <td>Matemática</td>
                 <td class="nota">0.0</td>
                 <td class="nota">0.0</td>
@@ -80,11 +80,11 @@
                 <td class="nota">0.0</td>
             </tr>
             <tr>
-                <th class="titulo-decorado" colspan="4">Média de Exatas</th>
+                <th class="titulo-decorado" colspan="4" scope="row">Média de Exatas</th>
                 <td class="titulo-decorado" id="nota">0,0</td>
             </tr>
             <tr>
-                <th rowspan="2">Humanas</th>
+                <th rowspan="2" scope="rowgroup">Humanas</th>
                 <td>História</td>
                 <td class="nota">0,0</td>
                 <td class="nota">0,0</td>
@@ -97,7 +97,7 @@
                 <td class="nota">0,0</td>
             </tr>
             <tr>
-                <th class="titulo-decorado" colspan="4">Média de Humanas</th>
+                <th class="titulo-decorado" colspan="4" scope="row">Média de Humanas</th>
                 <td class="titulo-decorado" id="nota">0,0</td>
             </tr>
             
