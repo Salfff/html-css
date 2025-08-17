@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+</head>
+<body>
+  <h1>Teste de formulário</h1>
+  <form action="cadastro.js" method="get" autocomplete="on">
+
+    <div>
+      <label for="inuser">Nome</label>
+      <input type="text" name="inuser" id="inuser" placeholder="Nome completo" autocomplete="name">
+    </div>
+
+    <div>
+      <label for="inmedia">Média</label>
+      <input type="number" name="inmedia" id="media" min="0" max="10" placeholder="0 a 10" step="0.5" required>
+    </div>
+
+    <div>
+      <label for="inmes">Período letivo</label>
+      <input type="month" name="month" id="month">
+    </div>
+
+    <div>
+      <label for="india">Período letivo</label>
+      <input type="date" name="india" id="india">
+    </div>
+
+    <div>
+      <label for="inhora">Horário da prova</label>
+      <input type="time" name="inhora" id="inhora">
+    </div>
+
+    <div>
+      <input type="submit" value="enviar">
+      <input type="reset" value="limpar">
+    </div>
+  </form>
+</body>
+</html>
