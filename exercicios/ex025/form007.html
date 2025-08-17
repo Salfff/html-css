@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+</head>
+<body>
+  <h1>Exemplo de formulário</h1>
+  <form action="cadastro.js" method="get" autocomplete="on">
+    <div>
+      <label for="inest">Estado:</label>
+
+      
+      <select name="estado" id="inest">
+        <option value="" selected>--- Escolha ---</option>
+        <optgroup label="Região sudeste">
+          <option value="SP">São Paulo</option>
+          <option value="RJ">Rio de Janeiro</option>
+          <option value="MG">Minas Gerais</option>
+        </optgroup>
+
+        <optgroup label="Região nordeste">
+          <option value="PE">Pernambuco</option>
+          <option value="CE">Ceará</option>
+          <option value="SE">Sergipe</option>
+        </optgroup>
+      </select>
+    </div>
+
+    <div>
+      <label for="inprof">Profissão:</label>
+      <input type="text" name="inprof" id="inprof" list="lstprof">
+
+      <datalist id="lstprof">
+        <option value="ADM">Administrador</option>
+        <option value="PROF">Professor</option>
+        <option value="PSIC">Psicólogo</option>
+        <option value="PROG">Programador</option>
+      </datalist>
+    </div>
+
+    <div>
+      <label for="inmsg">Mensagem:</label>
+      <textarea name="inmsg" id="inmsg" rows=""></textarea>
+    </div>
+
+    <div> 
+      <input type="submit" value="enviar">
+      <input type="reset" value="limpar">
+    </div>
+  </form>
+</body>
+</html>
