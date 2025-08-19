@@ -4,7 +4,5 @@
 
 body {
   background-image: url(../imagens/image.png);
-  background-size: contain;
-  background-repeat: no-repeat;
   background-position: left bottom;
 }
