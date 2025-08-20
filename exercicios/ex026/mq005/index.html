@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Media query</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
   <link rel="stylesheet" href="styles/stylesheet.css">
 </head>
 <body>
@@ -11,8 +12,10 @@
     <h1>
       Meu site
     </h1>
-
-    <menu>
+    <span class="material-symbols-outlined" onclick="clickMenu()">
+menu
+</span>
+    <menu id="nav">
       <ul>
         <li><a href="#">Opção 1</a></li>
         <li><a href="#">Opção 2</a></li>
@@ -35,5 +38,16 @@
       <p>lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse magni quos porro, culpa repellat error laborum eligendi aspernatur, architecto sed suscipit. Incidunt numquam id commodi? Unde nisi aut similique atque.</p>
     </article>
   </main>
+
+  <script>
+    function clickMenu() {
+      if(nav.style.display != 'block') {
+        return nav.style.display = 'block'
+      } 
+
+      nav.style.display = 'none'
+
+    }
+  </script>
 </body>
 </html>
