@@ -6,8 +6,10 @@
   <title>Media query</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
   <link rel="stylesheet" href="styles/stylesheet.css">
+
+  <link rel="stylesheet" href="styles/media-queries.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
   <header>
     <h1>
       Meu site
@@ -40,6 +42,14 @@ menu
   </main>
 
   <script>
+
+    function mudouTamanho() {
+      if(window.innerWidth >= 768) {
+        nav.style.display = 'block';
+      } else {
+        nav.style.display = 'none'
+      }
+    }
     function clickMenu() {
       if(nav.style.display != 'block') {
         return nav.style.display = 'block'
@@ -47,7 +57,11 @@ menu
 
       nav.style.display = 'none'
 
+    
+
+    
     }
+    
   </script>
 </body>
 </html>
