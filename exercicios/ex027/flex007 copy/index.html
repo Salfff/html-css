@@ -9,6 +9,8 @@
       display: flex;
       background-color: lightcoral;
       flex-flow: row wrap;
+      height: 400px;
+      align-items: flex-end;
     }
 
     div.item {
@@ -19,25 +21,25 @@
     }
 
     div#i1 {
-      order: 0;      
+      align-self: flex-end;
     }
     div#i2 {
-      order: -2;
+      align-self: center;
     }
     div#i3 {
-      order: 2;
+      align-self: flex-start;
     }
     div#i4 {
-      order: 89;
+      align-self: flex-end;
     }
     div#i5 {
-      order: 1;
+      align-self: inherit;
     }
     div#i6 {
-      order: 0;
+      align-self: center;
     }
     div#i7 {
-      order: -5;
+      align-self: stretch;
     }
   </style>
 </head>
