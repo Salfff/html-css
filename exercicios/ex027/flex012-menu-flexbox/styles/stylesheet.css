@@ -25,14 +25,14 @@ header {
   color: white;
 }
 header > h1 {
-  border: 1px dotted black;
+  /* border: 1px dotted black; */
   flex: 0 0 200px;
 }
 
 header > nav {
   display: flex;
   flex-flow: row wrap;
-  border: 1px dotted black;
+  /* border: 1px dotted black; */
   justify-content: flex-end;
 }
 
